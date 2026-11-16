@@ -34,7 +34,7 @@
 После установки Git в терминале была проверена версия утилиты и настроены данные пользователя (имя и электронная почта), привязываемые к коммитам:
 
 ```bash
-git --version
+git --version  //git version 2.47.0.windows.1
 git config --global user.name "Альмуханов А. М."
 git config --global user.email "adil0806@example.com"
 ```
