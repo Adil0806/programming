@@ -34,28 +34,31 @@
 После установки Git в терминале была проверена версия утилиты и настроены данные пользователя (имя и электронная почта), привязываемые к коммитам:
 
 ```bash
-git --version  //git version 2.47.0.windows.1
-git config --global user.name "Альмуханов А. М."
-git config --global user.email "adil0806@example.com"
+git --version                                          # git version 2.47.0.windows.1
+git config --global user.name "Альмуханов А. М."        # (пустой вывод — имя сохранено)
+git config --global user.email "adil0806@example.com"  # (пустой вывод — почта сохранена)
+
 ```
 
 ### 3.2. Инициализация репозитория и фиксация изменений
 Для хранения всех лабораторных работ по дисциплине была создана корневая директория, инициализирован локальный репозиторий и выполнена фиксация файлов:
 
 ```bash
-git init
-git status
-git add .
-git commit -m "Initial commit: create repository structure"
+git init                                               # Initialized empty Git repository in D:/programming/.git/
+git status                                             # Untracked files: lab_01/ (nothing added to commit)
+git add .                                              # (пустой вывод — все файлы добавлены в индекс)
+git commit -m "Initial commit: create repository structure"  # [master (root-commit) 753cf3a] Initial commit... 1 file changed
+
 ```
 
 ### 3.3. Связывание с удалённым репозиторием GitHub
 На платформе GitHub создан публичный репозиторий **`programming`** под учётной записью **`Adil0806`**, после чего выполнена привязка удалённого сервера и отправка ветки `main`:
 
 ```bash
-git remote add origin https://github.com/Adil0806/programming.git
-git branch -M main
-git push -u origin main
+git remote add origin https://github.com  # (пустой вывод — ссылка привязана)
+git branch -M main                                     # (пустой вывод — ветка переименована в main)
+git push -u origin main                                # To https://github.com * [new branch] main -> main
+
 ```
 
 ## 4. Результаты работы
